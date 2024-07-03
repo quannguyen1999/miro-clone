@@ -16,3 +16,7 @@ npx convex dev # (to run backend)
 
 # clerk
 npm install @clerk/nextjs
+
+# shadcn
+npx shadcn-ui@latest add dialog
+npx shadcn-ui@latest add tooltip
