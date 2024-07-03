@@ -12,7 +12,7 @@ npx shadcn-ui@latest add button
 
 # command run convex - backend
 npm install convex
-npx convex dev
+npx convex dev # (to run backend)
 
 # clerk
 npm install @clerk/nextjs
