@@ -9,3 +9,10 @@ npx create-next-app@latest discord-clone --typescript --tailwind --eslint
 npx shadcn-ui@latest init
 # command to install component library ui 
 npx shadcn-ui@latest add button
+
+# command run convex - backend
+npm install convex
+npx convex dev
+
+# clerk
+npm install @clerk/nextjs
