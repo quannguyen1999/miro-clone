@@ -5,6 +5,8 @@ import { ConvexClientProvider } from "@/providers/convex-client-provider";
 import { Toaster } from "sonner";
 import { ModalProvider } from "@/providers/modal.provider";
 
+import { LiveblocksProvider } from "@liveblocks/react";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,11 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ConvexClientProvider>
-          <Toaster />
-          <ModalProvider />
-          {children}
-        </ConvexClientProvider>
+       
+          <ConvexClientProvider>
+            <Toaster />
+            <ModalProvider />
+
+            {children}
+          </ConvexClientProvider>
+       
       </body>
     </html>
   );
