@@ -21,8 +21,9 @@ npm install @clerk/nextjs
 npx shadcn-ui@latest add dialog
 npx shadcn-ui@latest add tooltip
 npx shadcn-ui@latest add input
- npx shadcn-ui@latest add sonner
-
+npx shadcn-ui@latest add sonner
+npx shadcn-ui@latest add skeleton
 
 npm i query-string
 npm i usehooks-ts
+npm i date-fns
