@@ -30,3 +30,4 @@ npm i zustand
 npm i query-string
 npm i usehooks-ts
 npm i date-fns
+npm i convex-helpers
