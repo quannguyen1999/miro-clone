@@ -23,6 +23,7 @@ npx shadcn-ui@latest add tooltip
 npx shadcn-ui@latest add input
 npx shadcn-ui@latest add sonner
 npx shadcn-ui@latest add skeleton
+npx shadcn-ui@latest add avatar
 npx shadcn-ui@latest add dropdown-menu
 npx shadcn-ui@latest add alert-dialog
 npm i zustand
