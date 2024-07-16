@@ -31,3 +31,5 @@ npm i query-string
 npm i usehooks-ts
 npm i date-fns
 npm i convex-helpers
+
+npm install @liveblocks/node
