@@ -4,7 +4,6 @@ import { api } from "@/convex/_generated/api";
 import { auth, currentUser } from "@clerk/nextjs/server";
 const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
 const liveblocks = new Liveblocks({
-    
   secret: "sk_dev_1BynEWeUx4ki3Nw6hnMB2NCu9zCh96_7qr_aap0VFUUbpEjL70FBToQ8LwXtMrGK",
 });
 
@@ -37,7 +36,7 @@ export async function POST(request: Request) {
 
     const userInfo = {
         name: user.firstName || 'Teammeate',
-        picture: user.imageUrl
+        avatar: user.imageUrl
     }
 
     console.log({userInfo})
