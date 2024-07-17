@@ -12,7 +12,7 @@ const boundingBox = (layers: Layer[]) : XYWH | null => {
     let top = first.y;
     let bottom = first.y + first.height;
 
-    for(let i = 0; i< layers.length; i++){
+    for(let i = 1; i< layers.length; i++){
        const {x,y,width, height} = layers[i]; 
        if(left > x){
         left = x;
@@ -43,7 +43,7 @@ export const useSelectionBounds = () => {
     const selection = useSelf((me) => me.presence.selection);
     
     return useStorage((root) => {
-        const selectedLayers = selection?.map((layerId) => root.layers.get(layerId)!).filter(Boolean);
+        const selectedLayers = selection!.map((layerId) => root.layers.get(layerId)!).filter(Boolean);
 
         return boundingBox(selectedLayers!);
     }, shallow)
