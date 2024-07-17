@@ -39,7 +39,7 @@ export async function POST(request: Request) {
         avatar: user.imageUrl
     }
 
-    console.log({userInfo})
+    // console.log({userInfo})
 
     const session = liveblocks.prepareSession(
         user.id,
@@ -51,7 +51,7 @@ export async function POST(request: Request) {
     }
 
     const {status, body} = await session.authorize();
-    console.log({status, body}, "ALLOWED")
+    // console.log({status, body}, "ALLOWED")
     return new Response(body, {status});
 
 
