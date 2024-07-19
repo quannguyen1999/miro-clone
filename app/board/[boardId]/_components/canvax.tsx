@@ -217,6 +217,8 @@ const Canvas = ({ boardId }: CanvasProps) => {
         return;
       }
 
+      // if()
+
       setCanvasState({ origin: point, mode: CanvasMode.Pressing });
     },
     [camera, canvasState.mode, setCanvasState]

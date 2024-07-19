@@ -35,3 +35,4 @@ npm i convex-helpers
 npm i nanoid
 
 npm install @liveblocks/node
+npm i react-contenteditable

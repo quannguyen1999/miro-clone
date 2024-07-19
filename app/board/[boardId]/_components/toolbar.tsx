@@ -69,7 +69,7 @@ const Toolbar = ({
      
         />
         <ToolButton
-          label="Eclipse"
+          label="Ellipse"
           icon={Eclipse}
           onClick={() => setCanvasState({
             mode: CanvasMode.Inserting, layerType: LayerType.Ellipse
