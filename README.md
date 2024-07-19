@@ -36,3 +36,4 @@ npm i nanoid
 
 npm install @liveblocks/node
 npm i react-contenteditable
+npm i pefect-freehand
